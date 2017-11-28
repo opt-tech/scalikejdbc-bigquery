@@ -19,6 +19,8 @@ inConfig(IntegrationTest)(Defaults.itSettings)
 val scalikejdbcVersion = "3.0.0"
 val googleCloudVersion = "0.13.0-beta"
 
+publishTo := Some(Resolver.file("file",  new File( "/Users/ko.shibata/develop/opt/other/scalikejdbc-bigquery-tmp" )) )
+
 libraryDependencies ++= Seq(
   "org.scalikejdbc" %% "scalikejdbc" % scalikejdbcVersion % "provided,it,test",
 
@@ -27,3 +29,4 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.1" % "it,test",
   "org.scalamock" %% "scalamock-scalatest-support" % "3.5.0" % "it,test"
 )
+
