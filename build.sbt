@@ -4,7 +4,7 @@ organization := "com.mayreh"
 
 licenses += (("Apache-2.0", url("https://raw.githubusercontent.com/ocadaruma/scalikejdbc-bigquery/master/LICENSE")))
 
-version := "0.0.7-SNAPSHOT"
+version := "0.0.8-SNAPSHOT"
 
 publishMavenStyle := true
 
@@ -17,7 +17,7 @@ configs(IntegrationTest)
 inConfig(IntegrationTest)(Defaults.itSettings)
 
 val scalikejdbcVersion = "3.0.0"
-val googleCloudVersion = "0.13.0-beta"
+val googleCloudVersion = "0.30.0-beta"
 
 publishTo := Some(Resolver.file("file",  new File( "/Users/ko.shibata/develop/opt/other/scalikejdbc-bigquery-tmp" )) )
 
